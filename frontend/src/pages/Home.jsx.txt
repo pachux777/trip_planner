@@ -1,0 +1,32 @@
+function Home() {
+  return (
+    <>
+      <section className="hero">
+        <div>
+          <h1>Plan Your Dream Trip</h1>
+          <p>Budget, routes, hotels, transport and smart plans.</p>
+
+          <div className="search-box">
+            <input placeholder="From City" />
+            <input placeholder="To City" />
+            <input placeholder="Budget ₹" />
+            <button>Search</button>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>Popular Places</h2>
+
+        <div className="cards">
+          <div className="card"><h3>Munnar</h3></div>
+          <div className="card"><h3>Goa</h3></div>
+          <div className="card"><h3>Manali</h3></div>
+          <div className="card"><h3>Jaipur</h3></div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default Home;

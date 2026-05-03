@@ -1,0 +1,15 @@
+function Login() {
+  return (
+    <section className="section">
+      <h2>Login</h2>
+
+      <div className="search-box">
+        <input placeholder="Email" />
+        <input placeholder="Password" />
+        <button>Login</button>
+      </div>
+    </section>
+  );
+}
+
+export default Login;

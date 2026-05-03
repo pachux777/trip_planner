@@ -1,0 +1,16 @@
+function Cities() {
+  return (
+    <section className="section">
+      <h2>All Cities</h2>
+
+      <div className="cards">
+        <div className="card">Kochi</div>
+        <div className="card">Mumbai</div>
+        <div className="card">Delhi</div>
+        <div className="card">Bangalore</div>
+      </div>
+    </section>
+  );
+}
+
+export default Cities;

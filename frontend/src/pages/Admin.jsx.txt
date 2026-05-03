@@ -1,0 +1,15 @@
+function Admin() {
+  return (
+    <section className="section">
+      <h2>Admin Panel</h2>
+
+      <div className="cards">
+        <div className="card">Users: 150</div>
+        <div className="card">Trips: 75</div>
+        <div className="card">Cities: 40</div>
+      </div>
+    </section>
+  );
+}
+
+export default Admin;

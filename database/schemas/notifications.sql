@@ -1,0 +1,17 @@
+CREATE TABLE notifications (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  user_id INT NOT NULL,
+
+  title VARCHAR(180) NOT NULL,
+  message TEXT NOT NULL,
+
+  type VARCHAR(50),
+  is_read BOOLEAN DEFAULT FALSE,
+
+  action_url VARCHAR(255),
+
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+  FOREIGN KEY (user_id) REFERENCES users(id)
+);

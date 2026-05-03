@@ -1,0 +1,17 @@
+function Register() {
+  return (
+    <section className="section">
+      <h2>Register</h2>
+
+      <div className="search-box">
+        <input placeholder="Name" />
+        <input placeholder="Email" />
+        <input placeholder="Password" />
+        <input placeholder="Phone" />
+        <button>Create Account</button>
+      </div>
+    </section>
+  );
+}
+
+export default Register;

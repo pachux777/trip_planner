@@ -1,0 +1,73 @@
+/* Auth Loading State */
+.auth-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.auth-loading-content {
+  text-align: center;
+  color: white;
+}
+
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.auth-loading h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.auth-loading p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* Auth Denied State */
+.auth-denied {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.auth-denied-content {
+  text-align: center;
+  color: white;
+  padding: 40px;
+}
+
+.denied-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.auth-denied h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.auth-denied p {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 400px;
+  margin: 0 auto;
+}

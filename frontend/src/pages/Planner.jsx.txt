@@ -1,0 +1,17 @@
+function Planner() {
+  return (
+    <section className="section">
+      <h2>Trip Planner</h2>
+
+      <div className="search-box">
+        <input placeholder="From" />
+        <input placeholder="To" />
+        <input placeholder="Days" />
+        <input placeholder="Budget" />
+        <button>Create Plan</button>
+      </div>
+    </section>
+  );
+}
+
+export default Planner;

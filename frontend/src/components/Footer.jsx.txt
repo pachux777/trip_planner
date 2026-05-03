@@ -1,0 +1,10 @@
+function Footer() {
+  return (
+    <footer className="footer">
+      <h3>TripMaster</h3>
+      <p>Smart Travel Planner Across India</p>
+    </footer>
+  );
+}
+
+export default Footer;

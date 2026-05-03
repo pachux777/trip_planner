@@ -1,0 +1,22 @@
+CREATE TABLE blogs (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(255) NOT NULL,
+  slug VARCHAR(255) UNIQUE NOT NULL,
+
+  excerpt TEXT,
+  content LONGTEXT NOT NULL,
+
+  featured_image VARCHAR(255),
+
+  category VARCHAR(100),
+  tags VARCHAR(255),
+
+  author_name VARCHAR(120),
+
+  views INT DEFAULT 0,
+  is_published BOOLEAN DEFAULT TRUE,
+  featured BOOLEAN DEFAULT FALSE,
+
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
